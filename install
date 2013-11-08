@@ -3,7 +3,9 @@
   - install module python-gsmmodem
 2. Download source Web2py from web2py.com http://www.web2py.com/examples/static/web2py_src.zip
   - Extract web2py_src.zip to /opt/web2py
-  - Copy app sms to /opt/web2py/applications/
+  - change name folder welcome in /opt/web2py/applications to sms
+  - copy sms.py to /opt/web2py/applications/sms/private/
+  - copy plugin_sms.py to /opt/web2py/applications/sms/modules/
 3. Run the web2py
   - connect to http://your_hostame/admin and edit/update database email add/phone number
   - edit your zimbra hostname and zimbra user /opt/web2py/applications/sms/private/sms.py
