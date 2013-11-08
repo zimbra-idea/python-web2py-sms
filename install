@@ -1,13 +1,15 @@
-1. Download and install python 2.7
+1. Install driver gsm modem
+2. Download and install python 2.7
   - install module pyserial
   - install module python-gsmmodem
-2. Download source Web2py from web2py.com http://www.web2py.com/examples/static/web2py_src.zip
-  - Extract web2py_src.zip to /opt/web2py
-  - change name folder welcome in /opt/web2py/applications to sms
-  - copy sms.py to /opt/web2py/applications/sms/private/
-  - copy plugin_sms.py to /opt/web2py/applications/sms/modules/
-3. Run the web2py
+3. Download source Web2py from web2py.com http://www.web2py.com/examples/static/web2py_src.zip
+  - Extract web2py_src.zip to C:\web2py
+  - Download and extract app sms and copy folder sms to C:\web2py\applications\
+    https://www.dropbox.com/s/rnxnqzx55acqf4l/sms.zip
+4. Run the web2py
+  - copy file run.bat to C:\web2py
+  - click run.bat
   - connect to http://your_hostame/admin and edit/update database email add/phone number
-  - edit your zimbra hostname and zimbra user /opt/web2py/applications/sms/private/sms.py
+  - edit your zimbra hostname and zimbra user C:\web2py\applications\sms\private\sms.py
 -------------------------------------
 NOW you login to zimbra user and send email to another email and cc or bcc to sms
