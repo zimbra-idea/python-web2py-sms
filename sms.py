@@ -42,7 +42,7 @@ sms = SMS()
                         
 import time
 while True:
-        imapdb = DAL("imap://example:123456:993", pool_size=1) #account zimbra 'user:password'
+        imapdb = DAL("imap://example:123456@mail.example.com:993", pool_size=1) #account zimbra 'user:password'
         imapdb.define_tables()        
         q = imapdb.INBOX.seen == False
         rows = imapdb(q).select()
